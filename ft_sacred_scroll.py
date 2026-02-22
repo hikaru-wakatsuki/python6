@@ -1,9 +1,12 @@
+import alchemy.elements
+import alchemy
+
+
 def main() -> None:
     print()
     print("=== Sacred Scroll Mastery ===")
     print()
     print("Testing direct module access:")
-    import alchemy.elements
     print(f"alchemy.elements.create_fire(): {alchemy.elements.create_fire()}")
     print(f"alchemy.elements.create_water(): "
           f"{alchemy.elements.create_water()}")
@@ -12,7 +15,6 @@ def main() -> None:
     print(f"alchemy.elements.create_air(): {alchemy.elements.create_air()}")
     print()
     print("Testing package-level access (controlled by __init__.py):")
-    import alchemy
     try:
         print(f"alchemy.create_fire(): {alchemy.create_fire()}")
     except AttributeError:
