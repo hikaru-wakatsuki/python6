@@ -1,3 +1,9 @@
+from .spellbook import record_spell
+
+
+__all__ = ["record_spell"]
+
+
 def validate_ingredients(ingredients: str) -> str:
     valid_ingredients: list[str] = [
         "fire", "water", "earth", "air"
